@@ -1,0 +1,24 @@
+<template>
+    <div class="home-container">
+        <div class="image-section">
+            <img src={profilePhoto} alt="Profile Image" class="profile-image">
+        </div>
+        <div class="details-section">
+            <span class="greeting h1">Hi there!</span><br>
+            <span class="greeting h1"><b>I'm <span class="highlight-text">Prajwal Prasad</span></b></span><br>
+            <span class="description">
+                A seasoned Salesforce developer specializing in implementing custom AppExchange apps and web solutions.
+               
+            </span>
+        </div>
+    </div>
+    <div class="contact-section">
+        <div class="contact-text">
+            <span>Let us Connect</span><br>
+        </div>
+        <div class="contact-button-section">
+            <lightning-button class="contact-button" label="Contact Me" onclick={handleContactClick}></lightning-button>
+        </div>
+        
+    </div>
+</template>

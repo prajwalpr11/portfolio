@@ -1,0 +1,69 @@
+/* headerComponent.css */
+.header {
+    
+    
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.branding {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 40px; /* Adjust size as needed */
+    height: 40px; /* Adjust size as needed */
+    margin-right: 10px;
+    border-radius: 50%; 
+    border: 2px solid ;
+    border-color:  rgb(214, 207, 207);
+   
+}
+
+.logo:hover{
+    cursor: pointer;
+    
+}
+
+.logo-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar {
+    flex: 1;
+    text-align: right;
+    margin-left: -20px;
+}
+
+.nav-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-item {
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+.header-item {
+    text-decoration: none;
+    color:#e50e43;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.nav-item :hover {
+    color: #f5f7f7; /* Change color on hover */
+    cursor: pointer;
+}

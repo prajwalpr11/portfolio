@@ -1,0 +1,145 @@
+/* home.css */
+:host {
+    display: block;
+     /* Light gray background color */
+    padding: 0; /* Padding around the content */
+}
+
+.home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     /* Limiting max width to center content */
+    /* Light background color */
+    padding-top: 2rem;
+    margin: 0; /* Ensure no margin */
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.image-section {
+    flex: 1;
+    text-align: center;
+}
+
+.profile-image {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 50%;
+    transition: border 0.3s ease-in-out;
+}
+
+.profile-image:hover {
+    cursor: pointer;
+    border: 5px solid #0070c9;
+}
+
+.greeting {
+    font-size: 3rem; /* Adjust the font size as needed */
+    margin-bottom: 1rem; /* Optional: Adjust margin for spacing */
+    color: white;
+}
+
+.description{
+    font-size: 1.5rem; 
+    margin-bottom: 1rem;
+    color: white;
+}
+
+
+.highlight-text {
+    color: #e50e43; /* Replace with your desired color */
+}
+
+.details-section {
+    flex: 2;
+    padding-left: 1rem;
+}
+
+.details-section h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.details-section p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+.contact-section {
+   
+    text-align: center;
+    padding-bottom: 0.5rem;
+}
+.contact-button-section {
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+
+
+.contact-button {
+    --sds-c-button-color-background-primary: #e50e43; /* Button background color */
+    --sds-c-button-color-background-primary-hover: #450101; /* Button background hover color */
+    --sds-c-button-color-text-primary: white; /* Button text color */
+    --sds-c-button-padding-vertical: 0.5rem; /* Decrease vertical padding */
+    --sds-c-button-padding-horizontal: 2rem; /* Increase horizontal padding */
+    --sds-c-button-font-size: 1.5rem; /* Adjust font size */
+}
+
+.contact-button:hover {
+    background-color: rgb(77, 73, 73);
+}
+.contact-text {
+    font-size: 2.5rem;
+    color: white;
+    
+}
+
+.contact-text-connect{
+    font-size: 1.5rem;
+    color: white;
+}
+
+.find-me-section {
+     /* Adjust top margin as needed */
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.find-me-section-connect{
+    text-align: center;
+    font-size: 1rem; 
+}
+
+.find-me-section p {
+    font-size: 1.2rem; /* Adjust font size for "Find me on:" */
+    margin-bottom: 1rem; /* Optional: Adjust margin as needed */
+}
+
+.find-me-section ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+    margin: 0;
+}
+
+.find-me-section li {
+    display: inline-block;
+    margin-right: 25px; /* Optional: Adjust spacing between links */
+}
+
+.find-me-section a {
+    text-decoration: none;
+    color: #0070c9; /* Adjust icon color as needed */
+    font-size: 2rem; /* Increase icon size */
+    transition: color 0.3s ease-in-out;
+}
+
+.find-me-section a:hover {
+    color: #0056a3; /* Adjust hover color as needed */
+}

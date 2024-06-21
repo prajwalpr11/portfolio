@@ -1,0 +1,48 @@
+.footer {
+    background-color: black; /* Adjust background color as needed */
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.footer-content {
+    margin: 0 auto;
+}
+
+.footer-text {
+    font-size: 1.5rem; /* Adjust font size as needed */
+    font-weight: bold;
+    color: #848080;
+}
+
+.footer-text-connect {
+    font-size: 1.2rem; /* Adjust font size as needed */
+    color: #ccc;;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.footer-icons ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.footer-icons li {
+    display: inline;
+}
+
+.footer-icons a {
+    text-decoration: none;
+    color: #e50e43; /* Adjust icon color as needed */
+    font-size: 2rem; /* Increase icon size */
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-icons a:hover {
+    color: #f6f2f5; /* Adjust hover color as needed */
+}
+

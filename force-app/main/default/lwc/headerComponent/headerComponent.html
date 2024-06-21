@@ -3,22 +3,27 @@
     <header class="header">
         <div class="branding">
             <!-- Replace with your logo image or text -->
-            <img src="/path/to/your/logo.png" alt="Logo" class="logo">
-            <span class="logo-text">Portfolio</span>
+            <img src={logo} alt="Logo" class="logo branding-hover" >
+            
         </div>
+        <div>
         <nav class="navbar">
             <ul class="nav-list">
-                <li class="nav-item">
-                    <a href="/">Home</a>
+                <li class="nav-item" data-id="home" onclick={handleNavigation}>
+                    <span class="header-item">Home</span>
                 </li>
-                <li class="nav-item">
-                    <a href="/projects">Projects</a>
+                <li class="nav-item" data-id="projects" onclick={handleNavigation}>
+                    <span class="header-item">Projects</span>
                 </li>
-                <li class="nav-item">
-                    <a href="/about">About</a>
+                <li class="nav-item" data-id="about" onclick={handleNavigation}>
+                    <span class="header-item">About</span>
+                </li>
+                <li class="nav-item" data-id="resume" onclick={handleNavigation}>
+                    <span class="header-item">Resume</span>
                 </li>
                 <!-- Add more navigation links as needed -->
             </ul>
         </nav>
+    </div>
     </header>
 </template>
