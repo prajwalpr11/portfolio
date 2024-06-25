@@ -1,0 +1,11 @@
+<template>
+    <div class="resume-container">
+        <h2 class="section-title">My Resume</h2>
+        <div class="resume-content">
+            <iframe src={resumeUrl} class="resume-iframe"></iframe>
+        </div>
+        <div class="download-button-container">
+            <lightning-button label="Download Resume" onclick={downloadResume}></lightning-button>
+        </div>
+    </div>
+</template>

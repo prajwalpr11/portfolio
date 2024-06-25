@@ -1,8 +1,6 @@
-/* headerComponent.css */
 .header {
-    
-    
     top: 0;
+    position: fixed;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -10,6 +8,7 @@
     background-color: black;
     padding: 1rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000; 
 }
 
 .branding {
@@ -21,49 +20,86 @@
     width: 40px; /* Adjust size as needed */
     height: 40px; /* Adjust size as needed */
     margin-right: 10px;
-    border-radius: 50%; 
-    border: 2px solid ;
-    border-color:  rgb(214, 207, 207);
-   
+    border-radius: 50%;
+    border: 2px solid rgb(214, 207, 207);
 }
 
-.logo:hover{
+.logo:hover {
     cursor: pointer;
-    
 }
 
-.logo-text {
-    font-size: 1.5rem;
-    font-weight: bold;
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #e50e43; /* Set the color to red */
 }
 
 .navbar {
-    flex: 1;
-    text-align: right;
-    margin-left: -20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
 }
 
 .nav-list {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    display: flex;
 }
 
 .nav-item {
     display: inline-block;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
-
 
 .header-item {
     text-decoration: none;
-    color:#e50e43;
+    color: #e50e43;
     font-weight: bold;
     font-size: 1.1rem;
 }
 
-.nav-item :hover {
-    color: #f5f7f7; /* Change color on hover */
+.nav-item:hover .header-item {
+    color: #f5f7f7;
     cursor: pointer;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+    .navbar {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: black;
+        position: absolute;
+        top: 60px; /* Adjust to place below header */
+        left: 0;
+        z-index: 1000;
+    }
+
+    .navbar.show {
+        display: flex;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-item {
+        margin: 10px 0;
+        text-align: right;
+        padding-right: 2rem;
+    }
+
+    .hamburger {
+        display: block; /* Ensure the hamburger is displayed on smaller screens */
+    }
+
+    .header {
+        justify-content: space-between; /* Keep space between logo and hamburger */
+    }
 }

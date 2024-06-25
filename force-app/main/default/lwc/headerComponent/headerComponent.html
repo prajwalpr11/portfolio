@@ -1,29 +1,26 @@
-<!-- headerComponent.html -->
 <template>
-    <header class="header">
+    <div class="header">
         <div class="branding">
-            <!-- Replace with your logo image or text -->
-            <img src={logo} alt="Logo" class="logo branding-hover" >
-            
+            <img src={logo} alt="Logo" class="logo branding-hover" data-id="home" onclick={handleNavigation}>
         </div>
-        <div>
-        <nav class="navbar">
+        <div class="hamburger" onclick={toggleMenu}>
+            &#9776; <!-- Unicode for three horizontal bars -->
+        </div>
+        <div class="navbar">
             <ul class="nav-list">
                 <li class="nav-item" data-id="home" onclick={handleNavigation}>
                     <span class="header-item">Home</span>
                 </li>
-                <li class="nav-item" data-id="projects" onclick={handleNavigation}>
-                    <span class="header-item">Projects</span>
-                </li>
                 <li class="nav-item" data-id="about" onclick={handleNavigation}>
                     <span class="header-item">About</span>
                 </li>
-                <li class="nav-item" data-id="resume" onclick={handleNavigation}>
-                    <span class="header-item">Resume</span>
+                <li class="nav-item" data-id="projects" onclick={handleNavigation}>
+                    <span class="header-item">Projects</span>
                 </li>
-                <!-- Add more navigation links as needed -->
+                <li class="nav-item" data-id="resume" onclick={handleNavigation}>
+                    <span class="header-item">Contact Me</span>
+                </li>
             </ul>
-        </nav>
+        </div>
     </div>
-    </header>
 </template>

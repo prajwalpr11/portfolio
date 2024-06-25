@@ -2,19 +2,20 @@
     <div class="about-container">
         <div class="intro-section">
             <div class="text-content">
-                <h2 class="section-title">Know Who I Am</h2>
-                <p>Hi Everyone, My name is Prajwal Prasad from Boston, MA.</p>
-                <p>I am currently pursuing my Master's in Computer Science at Northeastern University, Boston</p><br>
+                <h2 class="section-title text-color">Know Who I Am</h2>
+                <p>Hi Everyone, My name is <span class="text-color">Prajwal Prasad </span>from <span class="text-color">Boston, MA </span></p>
+                <p>I am a Certified Salesforce Administrator with a strong passion for building solutions, especially through Lightning Web Components. With experience in fast-paced startups, sales, and marketing, I'm dedicated to leveraging technology and data for driving growth.</p>
+                <p>I am currently pursuing my Master's in <span class="text-color">Computer Science</span> at <span class="text-color">Northeastern University, Boston</span></p><br>
                 <p>🚀 I'm on the hunt for an SDE Internship or Co-op opportunity starting January 2024.</p><br><br>
-                <p><i class="fa-brands fa-salesforce fa-xl" style="color: #00A1E0;"></i>&nbsp;</i><b>Salesforce Certified Sales Cloud Consultant</b></p>
-                <p><i class="fa-brands fa-salesforce fa-xl" style="color: #00A1E0;"></i>&nbsp;</i><b>Salesforce Certified Platform Developer I</b></p>
-                <p><i class="fa-brands fa-salesforce fa-xl" style="color: #00A1E0;"></i>&nbsp;</i><b>Salesforce Certified Platform App Builder</b></p>
-                <p><i class="fa-brands fa-salesforce fa-xl" style="color: #00A1E0;"></i>&nbsp;</i><b>Salesforce Certified Administrator</b></p><br>
+                <p><i class="fa-brands fa-salesforce fa-xl" style="color: #00A1E0;"></i>&nbsp;</i><b><span class="salesforce-color">Salesforce Certified </span>Sales Cloud Consultant</b></p>
+                <p><i class="fa-brands fa-salesforce fa-xl" style="color: #00A1E0;"></i>&nbsp;</i><b><span class="salesforce-color">Salesforce Certified </span>Platform Developer I</b></p>
+                <p><i class="fa-brands fa-salesforce fa-xl" style="color: #00A1E0;"></i>&nbsp;</i><b><span class="salesforce-color">Salesforce Certified </span>Platform App Builder</b></p>
+                <p><i class="fa-brands fa-salesforce fa-xl" style="color: #00A1E0;"></i>&nbsp;</i><b><span class="salesforce-color">Salesforce Certified </span>Administrator</b></p><br>
                 <br>
                 <p>Apart from coding, some other activities that I love to do:</p>
                 <ul>
-                    <li>🧩 Puzzle Solving</li>
-                    <li>✍️ Tech Blogging</li>
+                    <li>🎨 Painting</li>
+                    <li>🚴‍♀️ Cycling</li>
                     <li>🌍 Travelling</li>
                 </ul>
             </div>
@@ -22,80 +23,42 @@
                 <img src={aboutPhoto} alt="Prajwal Prasad">
             </div>
         </div>
+
+        <div class="trailhead-section">
+            <img src={trailheadPhoto} alt="Trailhead Profile" class="trailhead-image">
+            <a href="https://www.salesforce.com/trailblazer/pprasad11" target="_blank" class="trailhead-link">
+                <span class="trailhead-text salesforce-color">Trailhead</span>
+            </a>
+        </div>
         
         <div class="experience-section">
             <h2 class="section-title">Work Experience</h2>
             
-            <div class="experience-item">
-                <h3>MTX Group Inc, Frisco, TX, USA</h3>
-                <p><i>Salesforce Developer Intern (Jan 2024 - Present)</i></p>
-                <p>Responsibilities:</p>
-                <ul>
-                    <li>Developed and managed Salesforce Lightning web components (LWC) using JavaScript and HTML, resulting in a 30% enhancement in user productivity.</li>
-                    <li>Leveraged Salesforce Flow automation to streamline business processes, reducing manual tasks by 40% and increasing overall efficiency by 25%.</li>
-                    <li>Led strategic planning and execution of bug-fixing initiatives, resulting in a 50% reduction in critical bugs within Salesforce solutions.</li>
-                </ul>
-            </div>
-            
-            <div class="experience-item">
-                <h3>Accenture Solutions Private Limited, Bangalore, India</h3>
-                <p><i>Software Engineer Analyst (Sep 2019 - Nov 2022)</i></p>
-                <p>Responsibilities:</p>
-                <ul>
-                    <li>Enhanced Salesforce Sales Cloud for Travel & Expense Application by implementing Agile methodologies to optimize opportunity management.</li>
-                    <li>Enforced stringent security standards for all objects, aligning 100% CRUD operations with authorized users.</li>
-                    <li>Propelled organization's Apex test coverage to an impressive 96% by overhauling existing test classes and crafting new tests.</li>
-                    <li>Elevated platform performance by 35% through strategic trigger consolidation and optimized code execution.</li>
-                    <li>Initiated and led adoption of ANT migration tool for deployments, outperforming Change Sets with a 30% increase in deployment efficiency.</li>
-                    <li>Spearheaded migration of Salesforce from Classic to Lightning, ensuring a seamless transition and achieving a 20% increase in platform performance.</li>
-                    <li>Mentored and empowered interns and junior team members, resulting in a 50% improvement in team effectiveness.</li>
-                </ul>
-            </div>
-        </div>
-        
-        <div class="education-section">
-            <h2 class="section-title">Education</h2>
-            <div class="education-item">
-                <h3>Khoury College of Computer Sciences, Northeastern University, Boston, MA</h3>
-                <p><i>Master of Science, Computer Science (Jan 2023 - Present, GPA: 3.6/4.0)</i></p>
-                <p>Related Courses: Programming Design, Web Development, Database Management System, Algorithms.</p>
-            </div>
-            <div class="education-item">
-                <h3>Dayananda Sagar College of Engineering, Bengaluru, India</h3>
-                <p><i>Bachelor of Engineering, Electronics and Communication Engineering (Aug 2015 - May 2019, GPA: 8.4/10.0)</i></p>
+            <div class="experience-items">
+                <div class="experience-item">
+                    <h3 class="text-color">MTX Group Inc, Frisco, TX, USA</h3>
+                    <p><i>Salesforce Developer Intern (Jan 2024 - Present)</i></p>
+                    <span class="responsibility">Responsibilities:</span>
+                    <ul>
+                        <li>Developed and managed Salesforce Lightning web components (LWC) using JavaScript and HTML, resulting in a 30% enhancement in user productivity.</li>
+                        <li>Leveraged Salesforce Flow automation to streamline business processes, reducing manual tasks by 40% and increasing overall efficiency by 25%.</li>
+                        <li>Led strategic planning and execution of bug-fixing initiatives, resulting in a 50% reduction in critical bugs within Salesforce solutions.</li>
+                    </ul>
+                </div>
+                
+                <div class="experience-item">
+                    <h3 class="text-color">Accenture, Bangalore, India</h3>
+                    <p><i>Software Engineer Analyst (Sep 2019 - Nov 2022)</i></p>
+                    <span class="responsibility">Responsibilities:</span>
+                    <ul>
+                        <li>Enhanced Salesforce Sales Cloud for Travel  Expense Application by implementing Agile methodologies to optimize opportunity management.</li>
+                        <li>Elevated platform performance by 35% through strategic trigger consolidation and optimized code execution.</li>
+                        <li>Initiated and led adoption of ANT migration tool for deployments, outperforming Change Sets with a 30% increase in deployment efficiency.</li>
+                        <li>Spearheaded migration of Salesforce from Classic to Lightning, ensuring a seamless transition and achieving a 20% increase in platform performance.</li>
+                    </ul>
+                </div>
             </div>
         </div>
         
-        <div class="skills-section">
-            <h2 class="section-title">Technical Skills</h2>
-            <ul class="skills-list">
-                <li>Programming Languages: Java, C++, C, Python, JavaScript, Typescript, SQL, SOQL, SOSL, Apex</li>
-                <li>Technologies and Frameworks: HTML, CSS, MySQL, MongoDB, Spring MVC, Lightning web Components, React</li>
-                <li>Tools: Git Version Control, Postman, IntelliJ, Visual Studio, Microsoft Office</li>
-                <li>Other: SFDC, Salesforce Sales and Service Cloud, Apex Class, Apex Triggers, LWC, CI/CD pipelines, REST APIs</li>
-            </ul>
-        </div>
-        
-        <div class="projects-section">
-            <h2 class="section-title">Academic Projects</h2>
-            <div class="project-item">
-                <h3>NU Flex Course Management</h3>
-                <p><i>(React, Express, NodeJS, MongoDB) Aug 2023 - Dec 2023</i></p>
-                <p>Built course management web application leveraging MERN stack and applying HTTP Rest APIs, achieving 98% positive feedback. Initiated robust authentication utilizing JWT and CRYPTO-JS for password hashing.</p>
-                <p>Crafted 12 reusable components, encompassing Forms, Events, and React Routers to augment application's features.</p>
-            </div>
-            <div class="project-item">
-                <h3>Image Manipulation and Enhancement</h3>
-                <p><i>(Java, Swing, OOPs) Jan 2023 - May 2023</i></p>
-                <p>Collaborated to develop a comprehensive image processing application with user-friendly text-based and GUI interfaces.</p>
-                <p>Empowered users to apply multitude of image processing effects such as flip, brighten, sepia, greyscale and more.</p>
-                <p>Implemented design patterns such as Model-View-Controller and Command-Design Pattern to ensure maintainable, extensible, and loosely coupled code, leading to a notable reduction of over 25% in code-related bugs.</p>
-            </div>
-        </div>
-        
-        <div class="achievements-section">
-            <h2 class="section-title">Achievements & Involvements</h2>
-            <p>Recognized with Salesforce Certified Sales Cloud Consultant, Platform Developer 1, Platform App Builder, and Salesforce Administrator certifications, demonstrating a holistic command of Salesforce functionalities.</p>
-        </div>
     </div>
 </template>

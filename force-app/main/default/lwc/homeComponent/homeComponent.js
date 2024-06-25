@@ -15,4 +15,14 @@ export default class HomeComponent extends LightningElement {
         });
 
     }
+
+    handleContactClick(){
+        const emailAddress = 'prsad.pra@northeastern.edu'; // Email address to open the email app
+
+        // Construct the mailto: URL with only the recipient email address
+        const mailtoUrl = `mailto:${emailAddress}`;
+
+        // Open the default email client with the pre-filled email to the recipient
+        window.location.href = mailtoUrl;
+    }
 }

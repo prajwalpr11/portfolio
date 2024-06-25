@@ -1,0 +1,113 @@
+:host {
+    display: block;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.projects-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.project-tiles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem; /* Space between tiles */
+    justify-content: center;
+}
+
+.project-tile {
+    padding: 1rem;
+    border-radius: 8px;
+    width: calc(33% - 2rem); /* 3 tiles per row */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 0.5px solid rgba(193, 12, 63, 0.709);
+    box-shadow: 0 8px 16px rgba(193, 12, 63, 0.709);
+    color: white; /* Ensuring text is readable on dark backgrounds */
+}
+
+.project-tile:hover {
+    transform: scale(1.05); /* Slight zoom-in effect */
+    box-shadow: 0 12px 24px #e50e43;
+}
+
+.project-tile h3 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    color: #e50e43;
+}
+
+.project-tile p {
+    color: white;
+}
+
+.project-description {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.project-tech {
+    font-size: 1rem;
+    color: #ccc;
+}
+
+.github-link {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #24292e;
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    align-self: flex-end;
+}
+
+.github-link:hover {
+    background-color: #0366d6;
+}
+
+/* For tablets and smaller desktops */
+@media (max-width: 1024px) {
+    .project-tile {
+        width: calc(50% - 2rem); /* 2 tiles per row */
+    }
+}
+
+/* For large mobile screens */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2rem; /* Slightly smaller title font on tablets */
+    }
+
+    .project-tile {
+        width: calc(50% - 1rem); /* 2 tiles per row */
+    }
+}
+
+/* For small mobile screens and smallest desktops */
+@media (max-width: 480px) {
+    .section-title {
+        font-size: 1.5rem; /* Smaller title font on mobile */
+    }
+
+    .project-tile {
+        width: 100%; /* 1 tile per row */
+    }
+}
+
+/* For smallest desktops (compressed) */
+@media (max-width: 600px) {
+    .project-tile {
+        width: 100%; /* 1 tile per row */
+    }
+}

@@ -1,22 +1,28 @@
 <template>
-    <div class="backgroundImg" style={getBackgroundImage}>
-        
-    <c-header-component   onselecteditem={handleNavigation}></c-header-component>
-        
-    <div class="content">
-        <template if:true={isHome}>
-            <c-home-component></c-home-component>
-        </template>
-        <template if:true={isProjects}>
-            <!--c-home></c-home-->
-        </template>
-        <template if:true={isAbout}>
-            <c-about-component></c-about-component>
-        </template>
-        <template if:true={isResume}>
-            <!--c-home></c-home-->
-        </template>
+    <div class="backgroundImg "  style={getBackgroundImage}>
+    <header> <c-header-component   onselecteditem={handleNavigation}></c-header-component></header>
+    
+        <div class="content">
+            
+            <template if:true={isHome}>
+                <c-home-component></c-home-component>
+            </template>
+            <template if:true={isAbout}>
+                <c-about-component></c-about-component>
+            </template>
+            <template if:true={isProjects}>
+                <c-project-component></c-project-component>
+            </template>
+            <template if:true={isResume}>
+                <c-connect-component></c-connect-component>
+            </template>
+            
+        </div>
+        <footer>
+            <c-footer-component></c-footer-component>
+        </footer>
     </div>
-    <c-footer-component></c-footer-component>
-    </div>
+    
+    
+
 </template>

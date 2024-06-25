@@ -16,5 +16,19 @@ export default class HeaderComponent extends LightningElement {
         );
         console.log('child',selected);
         this.dispatchEvent(selected);
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+        if (window.innerWidth <= 768) {
+            const navbar = this.template.querySelector('.navbar');
+            navbar.classList.remove('show');
+        }
+
+    }
+
+    toggleMenu() {
+        const navbar = this.template.querySelector('.navbar');
+        navbar.classList.toggle('show');
     }
 }

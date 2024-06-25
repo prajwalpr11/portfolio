@@ -1,18 +1,15 @@
-/* home.css */
 :host {
     display: block;
-     /* Light gray background color */
-    padding: 0; /* Padding around the content */
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .home-container {
     display: flex;
     justify-content: center;
     align-items: center;
-     /* Limiting max width to center content */
-    /* Light background color */
-    padding-top: 2rem;
-    margin: 0; /* Ensure no margin */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    padding-top: 6rem; /* Increase padding to avoid overlap with header */
 }
 
 body, html {
@@ -21,6 +18,7 @@ body, html {
 }
 
 .image-section {
+    padding: 2rem;
     flex: 1;
     text-align: center;
 }
@@ -38,20 +36,19 @@ body, html {
 }
 
 .greeting {
-    font-size: 3rem; /* Adjust the font size as needed */
-    margin-bottom: 1rem; /* Optional: Adjust margin for spacing */
-    color: white;
-}
-
-.description{
-    font-size: 1.5rem; 
+    font-size: 3rem;
     margin-bottom: 1rem;
     color: white;
 }
 
+.description {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: white;
+}
 
 .highlight-text {
-    color: #e50e43; /* Replace with your desired color */
+    color: #e50e43;
 }
 
 .details-section {
@@ -70,76 +67,120 @@ body, html {
 }
 
 .contact-section {
-   
     text-align: center;
     padding-bottom: 0.5rem;
 }
+
 .contact-button-section {
     margin-bottom: 2rem;
     margin-top: 1rem;
 }
 
-
 .contact-button {
-    --sds-c-button-color-background-primary: #e50e43; /* Button background color */
-    --sds-c-button-color-background-primary-hover: #450101; /* Button background hover color */
-    --sds-c-button-color-text-primary: white; /* Button text color */
-    --sds-c-button-padding-vertical: 0.5rem; /* Decrease vertical padding */
-    --sds-c-button-padding-horizontal: 2rem; /* Increase horizontal padding */
-    --sds-c-button-font-size: 1.5rem; /* Adjust font size */
+    --sds-c-button-color-background-primary: #e50e43;
+    --sds-c-button-color-background-primary-hover: #450101;
+    --sds-c-button-color-text-primary: white;
+    --sds-c-button-padding-vertical: 0.5rem;
+    --sds-c-button-padding-horizontal: 2rem;
+    --sds-c-button-font-size: 1.5rem;
 }
 
 .contact-button:hover {
     background-color: rgb(77, 73, 73);
 }
+
 .contact-text {
     font-size: 2.5rem;
     color: white;
-    
 }
 
-.contact-text-connect{
+.contact-text-connect {
     font-size: 1.5rem;
     color: white;
 }
 
 .find-me-section {
-     /* Adjust top margin as needed */
     align-items: center;
     display: flex;
     justify-content: center;
 }
 
-
-
-.find-me-section-connect{
+.find-me-section-connect {
     text-align: center;
-    font-size: 1rem; 
+    font-size: 1rem;
 }
 
 .find-me-section p {
-    font-size: 1.2rem; /* Adjust font size for "Find me on:" */
-    margin-bottom: 1rem; /* Optional: Adjust margin as needed */
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
 }
 
 .find-me-section ul {
-    list-style-type: none; /* Remove bullet points */
+    list-style-type: none;
     padding: 0;
     margin: 0;
 }
 
 .find-me-section li {
     display: inline-block;
-    margin-right: 25px; /* Optional: Adjust spacing between links */
+    margin-right: 25px;
 }
 
 .find-me-section a {
     text-decoration: none;
-    color: #0070c9; /* Adjust icon color as needed */
-    font-size: 2rem; /* Increase icon size */
+    color: #0070c9;
+    font-size: 2rem;
     transition: color 0.3s ease-in-out;
 }
 
 .find-me-section a:hover {
-    color: #0056a3; /* Adjust hover color as needed */
+    color: #0056a3;
+}
+
+/* Media Queries for Mobile View */
+@media (max-width: 768px) {
+    .home-container {
+        flex-direction: column;
+        padding: 2rem 1rem 1rem 1rem; /* Adjust padding for better spacing */
+    }
+
+    .details-section {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .greeting {
+        font-size: 2rem;
+    }
+
+    .description {
+        font-size: 1.2rem;
+    }
+
+    .contact-button {
+        --sds-c-button-padding-horizontal: 1rem;
+        --sds-c-button-font-size: 1.2rem;
+    }
+
+    .contact-text {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .greeting {
+        font-size: 1.5rem;
+    }
+
+    .description {
+        font-size: 1rem;
+    }
+
+    .contact-button {
+        --sds-c-button-font-size: 1rem;
+    }
+
+    .contact-text {
+        font-size: 1.5rem;
+    }
 }
